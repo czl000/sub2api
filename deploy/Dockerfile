@@ -27,7 +27,7 @@ COPY frontend/package.json frontend/pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
 # Copy frontend source and build
-COPY frontend/ ./
+COPY ../frontend/ ./
 RUN pnpm run build
 
 # -----------------------------------------------------------------------------
